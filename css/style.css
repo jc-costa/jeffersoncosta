@@ -3,8 +3,53 @@ body{
   color: #000000;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
