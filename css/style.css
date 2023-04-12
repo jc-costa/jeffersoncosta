@@ -1,9 +1,6 @@
 body{
   background-color: #f6f7f7;
+  background-size: contain;
+  background-position: center;
   color: #000000;
-}
-
-.responsive {
-  min-width: 50%;
-  height: auto;
 }
