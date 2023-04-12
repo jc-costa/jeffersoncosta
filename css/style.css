@@ -2,3 +2,8 @@ body{
   background-color: #f6f7f7;
   color: #000000;
 }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
